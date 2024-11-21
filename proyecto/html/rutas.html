@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutas Y Horarios</title>
+    <link rel="stylesheet" href="style_rutas.css">
+</head>
+<body>
+   
+    <header>
+        <nav>
+          <a href="index.html">
+            <img class="logo" src="public/logo.png" alt=""/>
+          </a>
+          <li class="anchors">
+            <a href="terminales.html">Terminales </a>
+            |
+            <a href="rutas.html">Rutas y Horarios </a>
+            |
+            <a href="promociones.html">Promociones </a>
+            |
+            <a href="inicio_sesion.html"><img src="public/icons8-user-24.png" alt=""></a>
+            <div class="user-info">
+              <!-- Nombre del usuario aparecerá aquí -->
+          </div>
+          </li>
+        </nav>
+      </header>
+      <main>
+        <div class="container">
+           
+          <h1 class="header">Horarios y precios de ida</h1>
+            <div class="grid" style="grid-template-columns: 1fr; grid-template-columns: repeat(2, 1fr);">
+              <div class="col">
+                <div class="card">
+                  <div class="flex-1">
+                    <p>10:00 h Villahermosa-Macuspana</p>
+                    <p class="text-sm">
+                      Quedan 21 asientos | <a href="asientos.html" class="text-blue">Seleccionar Asientos</a>
+                    </p>
+                  </div>
+                  <div class="price-container">
+                    <span>A Partir de:</span>
+                    <span class="price">25 MXN</span>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="flex-1">
+                    <p>10:50 h Macuspana-Villahermosa</p>
+                    <p class="text-sm">
+                      Quedan 23 asientos | <a href="ruta2.html" class="text-blue">Seleccionar Asientos</a>
+                    </p>
+                  </div>
+                  <div class="price-container">
+                    <span>A Partir De:</span>
+                    <span class="price">25 MXN</span>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="flex-1">
+                    <p>10:00 h Macuspana-Jalapa</p>
+                    <p class="text-sm">
+                      Quedan 25 asientos | <a href="#" class="text-blue">Seleccionar Asientos</a>
+                    </p>
+                  </div>
+                  <div class="price-container">
+                    <span>A Partir De:</span>
+                    <span class="price">25 MXN</span>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="flex-1">
+                    <p>10:40 h Jalapa-Macuspana</p>
+                    <p class="text-sm">
+                      Quedan 12 asientos | <a href="#" class="text-blue">Seleccionar Asientos</a>
+                    </p>
+                  </div>
+                  <div class="price-container">
+                    <span>A Partir de:</span>
+                    <span class="price">25 MXN</span>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="flex-1">
+                    <p>10:00 h Villahermosa-Jalapa</p>
+                    <p class="text-sm">
+                      Quedan 8 asientos | <a href="#" class="text-blue">Seleccionar Asientos</a>
+                    </p>
+                  </div>
+                  <div class="price-container">
+                    <span>A Partir de:</span>
+                    <span class="price">25 MXN</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="flex-1">
+                    <h2 class="header" style="font-size: 18px;">Todos Los Precios</h2>
+                    <p>Estudiante: $40 MXN</p>
+                    <p>Adulto Mayor: $25 MXN</p>
+                    <p>Completo: $55 MXN</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="flex-1">
+                    <h2 class="header" style="font-size: 18px;">Detalles Del Viaje</h2>
+                    <p>Duración de los viajes: De 40 minutos a 1 hora.</p>
+                    <p>Número de Asiento: Todos los autobuses cuentan con 30 asientos.</p>
+                    <p>Descuentos Aplicados: Los descuentos se aplican al seleccionar sus asientos.</p>
+                    <p>Seguros: Al momento de hacer la compra de un boleto tienes derecho al seguro de viajero.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </main>
+      <script src="checkSession.js"></script> <!-- Script para manejar la sesión -->
+</body>
+</html>

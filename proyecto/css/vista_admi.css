@@ -1,0 +1,132 @@
+/* Reseteo básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo general */
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #f0f2f5; /* Color de fondo suave y neutro */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* Estilo de la cabecera y navegación */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 150px;
+}
+
+.anchors {
+    display: flex;
+    align-items: center;
+}
+
+.anchors a {
+    padding: 10px 20px;
+    margin: 0 10px;
+    color: #555;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.anchors a:hover {
+    background-color: #d22d2d; /* Fondo rojo suave en hover */
+    color: #fff;
+}
+
+/* Estilo del contenido principal */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de las secciones */
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #444;
+    border-bottom: 2px solid #e0e0e0; /* Línea sutil bajo el título */
+    padding-bottom: 5px;
+}
+
+/* Estilo para tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #fafafa; /* Fondo suave para la tabla */
+    border-radius: 8px;
+    overflow: hidden; /* Mantiene las esquinas redondeadas */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
+    font-size: 0.95em;
+    color: #555;
+}
+
+thead {
+    background-color: #f4f4f4;
+}
+
+thead th {
+    font-weight: bold;
+    color: #333;
+}
+
+tbody tr {
+    transition: background-color 0.3s;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1; /* Fondo más claro al pasar el cursor */
+}
+
+/* Botones o enlaces de acción (si los tienes) */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #d22d2d;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #a61d1d;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecciona Tus Asientos</title>
+    <link rel="stylesheet" href="ruta2.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img class="logo" src="public/logo.png" alt="Logo">
+            </a>
+            <li class="anchors">
+                <a href="terminales.html">Terminales</a>
+                |
+                <a href="rutas.html">Rutas y Horarios</a>
+                |
+                <a href="promociones.html">Promociones</a>
+                |
+                <a href="inicio_sesion.html"><img src="public/icons8-user-24.png" alt="Usuario"></a>
+                <div id="user-info"></div>
+            </li>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Selecciona tus asientos</h1>
+            <p>Ruta: Macuspana-Villahermosa</p>
+            <div class="bus">
+                <div class="asientos">
+                    <!-- Generar asientos dinámicamente desde JavaScript para simplificar -->
+                </div>
+            </div>
+            <button class="btn-enviar">Enviar</button>
+        </div>
+    </main>
+
+    <!-- Modal para resumen de compra -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Resumen de Reserva</h2>
+            <div id="resumen"></div>
+            <form id="purchase-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="tipo-cliente">Tipo de Cliente:</label>
+                <select id="tipo-cliente" name="tipo-cliente" required>
+                    <option value="1">Estudiante</option>
+                    <option value="2">Adulto Mayor</option>
+                    <option value="3">Completo</option>
+                </select>
+                <p id="precio">Precio: $0.00</p>
+                <button type="submit" class="btn-enviar">Confirmar Reserva</button>
+            </form>            
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="asiento_ruta2.js"></script>
+    <script src="checkSession.js"></script> <!-- Script para manejar la sesión -->
+</body>
+</html>

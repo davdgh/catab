@@ -1,0 +1,279 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #eaeef4;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.logo {
+  width: 150px;
+  display: flex;
+  margin-left: 200px;
+}
+
+li {
+  list-style: none;
+}
+
+.user-info{
+  position:absolute;
+  padding: 5px;
+  top: 0%;
+  left: 0%;
+}
+
+.anchors {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.anchors a {
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #000;
+  font-weight: bold;
+}
+
+.anchors a:hover {
+  color: #d22d2d;
+  text-decoration: underline;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Additional CSS for the bus seats */
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.bus {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.seats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.asientos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 4rem;
+}
+
+.column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.asiento {
+  width: 40px;
+  height: 40px;
+  background-color: #ccc;
+  margin: 5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.asiento:hover {
+  background-color: #d22d2d;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.asiento.selected {
+  background-color: #4CAF50;
+}
+
+.btn-enviar {
+  --color: #fff;
+  --color-hover: #000;
+  --background: #555;
+  --background-hover: #999;
+  --hover-back: rgba(0, 0, 0, 0.1);
+  --hover-front: rgba(0, 0, 0, 0.1);
+  padding: 8px 28px;
+  border-radius: 20px;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border: none;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  color: var(--color);
+  background: var(--background);
+  transition: color 0.2s linear, background 0.3s linear;
+}
+
+.btn-enviar:before, .btn-enviar:after {
+  content: "";
+  position: absolute;
+  background: var(--hover-back);
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 200%;
+  border-radius: 40%;
+  transform: translateY(50%);
+  transition: transform 0.4s ease-in, border-radius 0.5s ease;
+  z-index: 0;  /* Asegura que los pseudo-elementos estén detrás del texto */
+}
+
+.btn-enviar:after {
+  background: var(--hover-front);
+  transition-duration: 0.44s;
+}
+
+.btn-enviar:hover {
+  color: var(--color-hover);
+  background: var(--background-hover);
+}
+
+.btn-enviar:hover:before, .btn-enviar:hover:after {
+  transform: translateY(0);
+  border-radius: 5%;
+}
+
+.btn-enviar:hover:after {
+  border-radius: 10%;
+  transition-delay: 0.02s;
+}
+
+.btn-enviar span {
+  position: relative;
+  z-index: 1;  /* Asegura que el texto esté por encima de los pseudo-elementos */
+}
+
+/* Estilos para el contenedor del modal */
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed; /* Fijar el modal en la pantalla */
+  z-index: 1; /* Asegurarse de que esté en frente */
+  left: 0;
+  top: 0;
+  width: 100%; /* Ancho completo */
+  height: 100%; /* Alto completo */
+  overflow: auto; /* Habilitar desplazamiento si es necesario */
+  background-color: rgba(0, 0, 0, 0.4); /* Color de fondo con opacidad */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 5% auto; /* Centrar vertical y horizontalmente */
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%; /* Ajustar según sea necesario */
+  max-width: 600px; /* Máximo ancho del modal */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra del modal */
+}
+
+/* Estilos del botón de cerrar */
+.close {
+  color: #333;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Estilos del formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espacio entre los elementos del formulario */
+}
+
+/* Estilo para las etiquetas */
+form label {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Estilo para los campos de entrada */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+}
+
+/* Estilo para el botón de enviar */
+form button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50; /* Color de fondo verde */
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #45a049; /* Color de fondo verde más oscuro al pasar el cursor */
+}
+
+.asiento {
+  /* Estilo de asientos */
+}
+
+.asiento.selected {
+  background-color: #4CAF50; /* Color para asientos seleccionados */
+}
+
+.asiento.reserved {
+  background-color: #f44336; /* Color para asientos reservados */
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+
+

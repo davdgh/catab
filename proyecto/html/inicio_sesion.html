@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicia Sesión</title>
+    <link rel="stylesheet" href="style_iniciosesion.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <a href="index.html">
+            <img class="logo" src="public/logo.png" alt=""/>
+          </a>
+          <li class="anchors">
+            <a href="terminales.html">Terminales </a>
+            |
+            <a href="rutas.html">Rutas y Horarios </a>
+            |
+            <a href="promociones.html">Promociones </a>
+            |
+            <a href="inicio_sesion.html"><img src="public/icons8-user-24.png" alt=""></a>
+          </li>
+        </nav>
+      </header>
+      <main>
+        <img src="" class="fondo">
+        <form id="loginForm">
+            <div>
+                <h1>Inicia sesión</h1>
+            </div>
+            <div>
+                <h2>¡Inicia Sesión Para Desbloquear Más Beneficios!</h2>
+                <label>
+                    Correo electrónico
+                    <input type="email" id="email" name="email" required>
+                </label>
+                <label>
+                    Contraseña
+                    <input type="password" id="password" name="password" required>
+                </label>
+                <button type="submit">Acceder</button>
+                <h1 class="registro">¿Aún no tienes cuenta?</h1>
+                <button class="registrate" onclick="window.location.href='registro.html'">Regístrate</button>
+            </div>
+        </form>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="libreria.js"></script>
+</body>
+</html>

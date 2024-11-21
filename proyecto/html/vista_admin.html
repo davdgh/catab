@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos</title>
+    <link rel="stylesheet" href="vista_admi.css">
+</head>
+<body>
+    <div class="flex flex-col w-full min-h-screen">
+        <header class="header">
+            <nav class="nav">
+                <a href="index.html">
+                    <img class="logo" src="public/logo.png" alt=""/>
+                  </a>
+                  <li class="anchors">
+                    <a href="terminales.html">Terminales </a>
+                    |
+                    <a href="rutas.html">Rutas y Horarios </a>
+                    |
+                    <a href="promociones.html">Promociones </a>
+                    |
+                    <a href="inicio_sesion.html"><img src="public/icons8-user-24.png" alt=""></a>
+                  </li>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="grid">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Total De Reservas</h2>
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"></path>
+                            <path d="M13 5v2"></path>
+                            <path d="M13 17v2"></path>
+                            <path d="M13 11v2"></path>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-number">12,345</div>
+                        <p class="card-description">+5.2% frl mes pasado</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Ingresos Totales</h2>
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" x2="12" y1="2" y2="22"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-number">$125,678.90</div>
+                        <p class="card-description">+8.3% del mes pasado</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Ordenes Pendientes</h2>
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-number">234</div>
+                        <p class="card-description">+12% del mes pasado</p>
+                    </div>
+                                <div class="card-content">
+                        <div class="chart"></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Ordenes Recientes</h2>
+                        <p class="card-description">Vea y administre todos los pedidos recientes de boletos de autobús.</p>
+                    </div>
+                    <div class="card-content">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Pasajero</th>
+                                    <th class="hidden sm:table-cell">Ruta</th>
+                                    <th class="hidden sm:table-cell">Fecha del compra</th>
+                                    <th class="hidden md:table-cell">Tipo de cliente</th>
+                                    <th class="text-right">Asientos Seleccionado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="font-medium">Antonio González</div>
+                                        <div class="text-gray-500 text-sm">dgonzalezhernandez428@gmail.com</div>
+                                    </td>
+                                    <td class="hidden sm:table-cell">Macuspana - Villahermosa</td>
+                                    <td class="hidden sm:table-cell">Julio 25, 2024</td>
+                                    <td class="hidden md:table-cell">Adulto mayor</td>
+                                    <td class="text-right">
+                                        <span class="badge">1</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="font-medium">Itzel Romero</div>
+                                        <div class="text-gray-500 text-sm">ar5196283@gmail.com</div>
+                                    </td>
+                                    <td class="hidden sm:table-cell">Villahermosa - Macuspana</td>
+                                    <td class="hidden sm:table-cell">Julio 30, 2024</td>
+                                    <td class="hidden md:table-cell">Estudiante</td>
+                                    <td class="text-right">
+                                        <span class="badge">2</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="font-medium">Jaziel Real</div>
+                                        <div class="text-gray-500 text-sm">hugu34.3620@gmail.com</div>
+                                    </td>
+                                    <td class="hidden sm:table-cell">Jalapa - Villahermosa</td>
+                                    <td class="hidden sm:table-cell">Agosto 1, 2024</td>
+                                    <td class="hidden md:table-cell">Completo</td>
+                                    <td class="text-right">
+                                        <span class="badge">10</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="font-medium">Bob Brown</div>
+                                        <div class="text-gray-500 text-sm">bobbrown@gmail.com</div>
+                                    </td>
+                                    <td class="hidden sm:table-cell">Villahermosa - Jalapa</td>
+                                    <td class="hidden sm:table-cell">Agosto 5, 2024</td>
+                                    <td class="hidden md:table-cell">Estudiante</td>
+                                    <td class="text-right">
+                                        <span class="badge">11</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="font-medium">Emma Wilson</div>
+                                        <div class="text-gray-500 text-sm">emmawilson@gmail.com</div>
+                                    </td>
+                                    <td class="hidden sm:table-cell">Jalapa - Macuspana</td>
+                                    <td class="hidden sm:table-cell">Julio 28, 2024</td>
+                                    <td class="hidden md:table-cell">Adulto </td>
+                                    <td class="text-right">
+                                        <span class="badge">Confirmado</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

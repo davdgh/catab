@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="registro.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img class="logo" src="public/logo.png" alt=""/>
+            </a>
+            <li class="anchors">
+                <a href="terminales.html">Terminales </a>
+                |
+                <a href="rutas.html">Rutas y Horarios </a>
+                |
+                <a href="promociones.html">Promociones </a>
+                |
+                <a href="inicio_sesion.html"><img src="public/icons8-user-24.png" alt=""></a>
+            </li>
+        </nav>
+    </header>
+    <main>
+        <form id="registrationForm">
+            <div>
+                <h1>Regístrate</h1>
+            </div>
+            <div>
+                <h2>¡Únete a nosotros y disfruta de nuestros beneficios!</h2>
+                <label>
+                    Nombre
+                    <input type="text" name="nombre" id="nombre">
+                </label>
+                <label>
+                    Correo electrónico
+                    <input type="email" name="email" id="email">
+                </label>
+                <label>
+                    Teléfono
+                    <input type="tel" name="telefono" id="telefono">
+                </label>
+                <label>
+                    Contraseña
+                    <input type="password" name="password" id="password">
+                </label>
+                <label>
+                    Selecciona que tipo de cliente eres
+                  <select name="tipo_cliente" id="tipo_cliente">
+                    <option value="estudiante">Estudiante</option>
+                    <option value="adulto_mayor">Adulto Mayor</option>
+                    <option value="completo">Completo</option>
+                  </select>
+
+                </label>
+                <button type="submit">Registrarse</button>
+                <h1 class="registro">¿Ya tienes cuenta?</h1>
+                <button class="registrate" onclick="window.location.href='inicio_sesion.html'">Inicia sesión</button>
+            </div>
+        </form>
+    </main>
+    <script src="registro.js"></script>
+</body>
+</html>

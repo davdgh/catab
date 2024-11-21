@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promociones</title>
+    <link rel="stylesheet" href="style_promo.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <a href="index.html">
+            <img class="logo" src="public/logo.png" alt=""/>
+          </a>
+          <li class="anchors">
+            <a href="terminales.html">Terminales </a>
+            |
+            <a href="rutas.html">Rutas y Horarios </a>
+            |
+            <a href="promociones.html">Promociones </a>
+            |
+            <a href="inicio_sesion.html"><img src="public/icons8-user-24.png" alt=""></a>
+            <div id="user-info">
+              <!-- Nombre del usuario aparecerá aquí -->
+          </div>
+          </li>
+        </nav>
+      </header>
+      <main>
+        <section class="hero">
+        <div class="container">
+          <h2>Promociones Vigentes</h2>
+          <section class="cards">
+            <div class="cards">
+              <div class="card" href="#">
+                <img src="public/boleto.png" alt="" class="img_card">
+                <div class="card__content">
+                  <p class="card__title">Compra Anticipada</p>
+                  <p class="card__description">¡Si compras con tiempo, podrás 
+                    encontrar un buen descuento, y más asientos disponibles!​</p>
+                </div>
+              </div>
+              <div class="card" href="#">
+                <img src= "public/estudiantes.png" alt="" class="img_card">
+                <div class="card__content">
+                  <p class="card__title">Estudiantes</p>
+                  <p class="card__description">​Presentar  la credencial vigente de estudiante para hacer valido el descuento.</p>
+                </div>
+              </div>
+              <div class="card" href="#">
+                <img src= "public/inapam.png" alt="" class="img_card">
+                <div class="card__content">
+                  <p class="card__title">Adultos Mayores</p>
+                  <p class="card__description">​Es necesario presentar la credencial original y vigente de INAPAM (antes INSEN) 
+                    para obtener su descuento  (no se aceptan copias).</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      </main>
+      <script src="checkSession.js"></script> <!-- Script para manejar la sesión -->
+</body>
+</html>

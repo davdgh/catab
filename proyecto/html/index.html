@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img class="logo" src="public/logo.png" alt=""/>
+            </a>
+            <li class="anchors">
+                <a href="terminales.html">Terminales </a>
+                |
+                <a href="rutas.html">Rutas y Horarios </a>
+                |
+                <a href="promociones.html">Promociones </a>
+                |
+                <a href="inicio_sesion.html"><img src="public/icons8-user-24.png" alt=""></a>
+                |
+                <a href="logout.php">Cerrar Sesión</a>
+            </li>
+            <div id="user-info">
+                <!-- Nombre del usuario aparecerá aquí -->
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" data-aos="fade-up">
+            <div class="hero-content">
+                <h1>Bienvenido a Nuestra Plataforma de Boletos</h1>
+                <p>Compra tus boletos de manera rápida y sencilla desde cualquier lugar.</p>
+                <a href="promociones.html" class="btn-primary" data-aos="fade-up" data-aos-delay="200">Ver Promociones</a>
+            </div>
+        </section>
+        <section class="features">
+            <div class="feature" data-aos="fade-up" data-aos-delay="100">
+                <img src="public/facil.png" alt="Fácil de Usar">
+                <h3>Fácil de Usar</h3>
+                <p>Nuestra plataforma es intuitiva y fácil de usar para todos.</p>
+            </div>
+            <div class="feature" data-aos="fade-up" data-aos-delay="200">
+                <img src="public/seguridad.png" alt="Seguridad">
+                <h3>Seguridad</h3>
+                <p>Garantizamos la seguridad de tus datos y transacciones.</p>
+            </div>
+            <div class="feature" data-aos="fade-up" data-aos-delay="300">
+                <img src="public/soporte.png" alt="Soporte 24/7">
+                <h3>Soporte 24/7</h3>
+                <p>Estamos aquí para ayudarte en cualquier momento.</p>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="review" data-aos="fade-up" data-aos-delay="400">
+                <p>"Excelente servicio, muy fácil de usar y los precios son muy competitivos."</p>
+                <p>- David González</p>
+            </div>
+            <div class="review" data-aos="fade-up" data-aos-delay="500">
+                <p>"Me encantó la variedad de destinos y la flexibilidad de horarios. Muy recomendado."</p>
+                <p>- Astrid Itzel</p>
+            </div>
+            <div class="review" data-aos="fade-up" data-aos-delay="600">
+                <p>"Compra rápida y segura, definitivamente usaré CATAB para mi próximo viaje."</p>
+                <p>- Jaziel Real</p>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="checkSession.js"></script> <!-- Script para manejar la sesión -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
